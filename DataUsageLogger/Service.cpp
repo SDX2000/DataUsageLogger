@@ -52,8 +52,7 @@ VOID WINAPI ServiceMain(DWORD argc, LPTSTR *argv)
 
     if (SetServiceStatus(g_StatusHandle, &g_ServiceStatus) == FALSE)
     {
-        OutputDebugString(
-            SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
+        OutputDebugString(SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
     }
 
     /*
@@ -73,8 +72,7 @@ VOID WINAPI ServiceMain(DWORD argc, LPTSTR *argv)
 
         if (SetServiceStatus(g_StatusHandle, &g_ServiceStatus) == FALSE)
         {
-            OutputDebugString(
-                SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
+            OutputDebugString(SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
         }
         goto EXIT;
     }
@@ -87,8 +85,7 @@ VOID WINAPI ServiceMain(DWORD argc, LPTSTR *argv)
 
     if (SetServiceStatus(g_StatusHandle, &g_ServiceStatus) == FALSE)
     {
-        OutputDebugString(
-            SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
+        OutputDebugString(SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
     }
 
     // Start a thread that will perform the main task of the service
@@ -112,8 +109,7 @@ VOID WINAPI ServiceMain(DWORD argc, LPTSTR *argv)
 
     if (SetServiceStatus(g_StatusHandle, &g_ServiceStatus) == FALSE)
     {
-        OutputDebugString(
-            SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
+        OutputDebugString(SERVICE_NAME _T(": ServiceMain: SetServiceStatus returned error"));
     }
 
 EXIT:
@@ -140,8 +136,7 @@ VOID WINAPI ServiceCtrlHandler(DWORD CtrlCode)
 
         if (SetServiceStatus(g_StatusHandle, &g_ServiceStatus) == FALSE)
         {
-            OutputDebugString(
-                SERVICE_NAME _T(": ServiceCtrlHandler: SetServiceStatus returned error"));
+            OutputDebugString(SERVICE_NAME _T(": ServiceCtrlHandler: SetServiceStatus returned error"));
         }
 
         // This will signal the worker thread to start shutting down
@@ -161,13 +156,7 @@ DWORD WINAPI ServiceWorkerThread(LPVOID lpParam)
     //  Periodically check if the service has been requested to stop
     while (WaitForSingleObject(g_ServiceStopEvent, 0) != WAIT_OBJECT_0)
     {
-        /*
-        * Perform main service function here
-        */
-
         LogAllAdapters();
-
-        //  Simulate some work by sleeping
         Sleep(INTERVAL);
     }
 

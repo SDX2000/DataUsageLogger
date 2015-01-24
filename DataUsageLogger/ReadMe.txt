@@ -21,15 +21,14 @@ DataUsageLogger.vcxproj.filters
     similar extensions under a specific node (for e.g. ".cpp" files are associated with the
     "Source Files" filter).
 
-DataUsageLogger.cpp
+Service.cpp
     This is the main application source file.
 
 /////////////////////////////////////////////////////////////////////////////
 Other standard files:
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named DataUsageLogger.pch and a precompiled types file named StdAfx.obj.
+We are not using precompiled headers since there was a conflict between some headers files
+and I decided against spending time on this.
 
 /////////////////////////////////////////////////////////////////////////////
 Other notes:
