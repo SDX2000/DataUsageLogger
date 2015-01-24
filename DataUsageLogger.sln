@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataUsageLogger", "DataUsageLogger\DataUsageLogger.vcxproj", "{D0244D34-57D8-4036-915C-8499E167F10A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76BE3BB5-0FA4-46F0-87D4-DBBAD1BC3D9C}"
+	ProjectSection(SolutionItems) = preProject
+		install.cmd = install.cmd
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Debug|Win32.Build.0 = Debug|Win32
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Debug|x64.ActiveCfg = Debug|x64
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Debug|x64.Build.0 = Debug|x64
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Release|Win32.ActiveCfg = Release|Win32
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Release|Win32.Build.0 = Release|Win32
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Release|x64.ActiveCfg = Release|x64
+		{D0244D34-57D8-4036-915C-8499E167F10A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
